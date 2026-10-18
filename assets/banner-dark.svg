@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Prince Kumar</title>
+  <desc id="d">Computer Science student building full-stack and AI projects and contributing to open source. A git branch graph shows learn, build, an open-source PR branch, merge, and next.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#94A3B8" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="320" rx="20"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-out infinite; }
+    @keyframes pulse { 0% { transform: scale(1); opacity: .55; } 100% { transform: scale(2.6); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .pulse { animation: none; opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="19.5" fill="none" stroke="#1E293B"/>
+
+  <!-- Identity -->
+  <text x="64" y="96" class="mono" font-size="20" fill="#22D3EE">~/princecherry9905</text>
+  <text x="62" y="172" class="sans" font-size="72" font-weight="700" fill="#F8FAFC" letter-spacing="-1.5">Prince Kumar</text>
+  <rect x="64" y="196" width="128" height="4" rx="2" fill="url(#accent)"/>
+  <text x="64" y="244" class="sans" font-size="26" fill="#94A3B8">CS student · full-stack &amp; AI · open source</text>
+
+  <!-- Branch graph -->
+  <text x="716" y="84" class="mono" font-size="16" fill="#475569">$ git log --graph</text>
+  <path d="M716 214 H1140" stroke="#334155" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M826 214 C 856 214, 856 136, 892 136 H 948 C 984 136, 984 214, 1014 214" stroke="#A78BFA" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <g class="mono" font-size="15" fill="#94A3B8" text-anchor="middle">
+    <circle cx="736" cy="214" r="8" fill="#0B1120" stroke="#22D3EE" stroke-width="3"/>
+    <text x="736" y="252">learn</text>
+    <circle cx="826" cy="214" r="8" fill="#0B1120" stroke="#22D3EE" stroke-width="3"/>
+    <text x="826" y="252">build</text>
+    <circle cx="920" cy="136" r="8" fill="#0B1120" stroke="#A78BFA" stroke-width="3"/>
+    <text x="920" y="114" fill="#C4B5FD">upstream PR</text>
+    <circle cx="1014" cy="214" r="8" fill="#0B1120" stroke="#22D3EE" stroke-width="3"/>
+    <text x="1014" y="252">merge</text>
+    <circle class="pulse" cx="1112" cy="214" r="9" fill="#22D3EE"/>
+    <circle cx="1112" cy="214" r="9" fill="#22D3EE"/>
+    <text x="1112" y="252" fill="#E2E8F0">next</text>
+  </g>
+</svg>
